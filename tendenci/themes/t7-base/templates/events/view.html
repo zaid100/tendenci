@@ -154,11 +154,11 @@ div.pricing-list-wrap li{
               {{ speaker.description|striptags|safe|truncatewords:"50" }}
             </div>
             <div class="speaker-desc-long">
-              {{ speaker.description|safe|urlize|linebreaks }}
+              {{ speaker.description|safe|linebreaks }}
             </div>
             {% else %}
             <div class="speaker-desc-short">
-              {{ speaker.description|safe|urlize|linebreaks }}
+              {{ speaker.description|safe|linebreaks }}
             </div>
             {% endif %}
             {% if speaker.description|striptags|wordcount > 50 %}
